@@ -24,6 +24,8 @@ public class ReminderListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Make static data
         String[] items = new String[] { "Foo", "Bar", "Fizz", "Bin" };
         mAdapter = new ArrayAdapter<String>(getActivity(), R.layout.reminder_row, R.id.text1, items);
         setListAdapter(mAdapter);
