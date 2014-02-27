@@ -19,6 +19,7 @@ public class ReminderEditActivity extends Activity {
 
         //
         setContentView(R.layout.reminder_edit_activity);
+        //
         Fragment fragment = getFragmentManager().findFragmentByTag(ReminderEditFragment.DEFAULT_EDIT_FRAGMENT_TAG);
 
         //
@@ -37,7 +38,7 @@ public class ReminderEditActivity extends Activity {
 
     /**
      * A placeholder fragment containing a simple view.
-     */
+     *
     public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
@@ -50,5 +51,6 @@ public class ReminderEditActivity extends Activity {
             return rootView;
         }
     }
+    */
 
 }

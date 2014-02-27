@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,9 +32,12 @@ public class ReminderListActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        
+        ////////////// Placed on the fragment
+
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.reminder_list, menu);
+        //getMenuInflater().inflate(R.menu.reminder_list, menu);
+
+        //
         return true;
     }
 
@@ -43,9 +47,24 @@ public class ReminderListActivity extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        ////////////// Placed on the fragment
+        /*
         if (id == R.id.action_settings) {
             return true;
         }
+
+
+        //
+        switch (item.getItemId()) {
+            case R.id.menu_insert:
+                //editReminder(0);
+                Log.w("myApp", "menu_insert selected!!!");
+                return true;
+        }
+        */
+
+        //
         return super.onOptionsItemSelected(item);
     }
 

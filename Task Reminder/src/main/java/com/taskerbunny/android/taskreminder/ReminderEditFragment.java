@@ -27,8 +27,11 @@ public class ReminderEditFragment extends Fragment {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        //
         View v = inflater.inflate(R.layout.reminder_edit_fragment, container, false);
 
+        //
         mTitleText = (EditText) v.findViewById(R.id.title);
         mBodyText = (EditText) v.findViewById(R.id.body);
         mDateButton = (Button) v.findViewById(R.id.reminder_date);
